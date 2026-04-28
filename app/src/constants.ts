@@ -4,24 +4,12 @@ export const VALIDATION_TYPES = ['FAILED_VALIDATION', 'RECORD_NOT_UNIQUE'];
 
 export const D9_LOGO = `
 %c
-    ██████████████████████████
-  ████████████████████████████████
- ██████████                ██████████          ██
-████████                      ████████        ████
-███████     ████████████████    ███████       ████
-██████    ██████████████████████  ██████     █████
-██████   ████████        ████████  █████    █████
-██████   ███████  ██████  ███████  █████   █████
-██████   ███████  ██████  ███████  █████  █████
-██████   ████████        ████████  █████ █████
-██████    ██████████████████████  ██████ ████
-███████     ████████████████    ██████  ████
-████████                      ████████ ███
- ██████████                ██████████ ██
-  ████████████████████████████████  ██
-    ██████████████████████████    ██
-                                ██
-                               █
+██████╗░░█████╗░
+██╔══██╗██╔══██╗
+██║░░██║╚██████║
+██║░░██║░╚═══██║
+██████╔╝░█████╔╝
+╚═════╝░░╚════╝░
 %c
 `;
 
@@ -58,7 +46,13 @@ export const MODULE_BAR_DEFAULT = [
 	{
 		type: 'module',
 		id: 'insights',
+		enabled: false,
+	},
+	{
+		type: 'module',
+		id: 'settings',
 		enabled: true,
+		locked: true,
 	},
 	{
 		type: 'link',
@@ -66,13 +60,7 @@ export const MODULE_BAR_DEFAULT = [
 		enabled: true,
 		name: '$t:documentation',
 		icon: 'help',
-		url: 'https://d9.webcapsule.io/getting-started/introduction.html',
-	},
-	{
-		type: 'module',
-		id: 'settings',
-		enabled: true,
-		locked: true,
+		url: 'https://d9.datos.online/',
 	},
 ];
 
