@@ -16,10 +16,10 @@
 			</v-list-item-content>
 		</v-list-item>
 
-		<v-list-item href="https://github.com/LaWebcapsule/d9/releases" class="version">
+		<v-list-item href="https://github.com/Datos-Online/d9/releases" class="version">
 			<v-list-item-icon><v-icon name="directus" /></v-list-item-icon>
 			<v-list-item-content>
-				<v-text-overflow class="version" :text="`Directus ${version}`" />
+				<v-text-overflow class="version" :text="`d9 ${version}`" />
 			</v-list-item-content>
 		</v-list-item>
 	</v-list>
@@ -38,14 +38,14 @@ export default defineComponent({
 
 		const navItems = [
 			{
-				icon: 'public',
-				name: t('settings_project'),
-				to: `/settings/project`,
-			},
-			{
 				icon: 'list_alt',
 				name: t('settings_data_model'),
 				to: `/settings/data-model`,
+			},
+			{
+				icon: 'public',
+				name: t('settings_project'),
+				to: `/settings/project`,
 			},
 			{
 				icon: 'admin_panel_settings',
@@ -72,6 +72,11 @@ export default defineComponent({
 				name: t('settings_flows'),
 				to: `/settings/flows`,
 			},
+			{
+				icon: 'pending_actions',
+				name: t('activity'),
+				to: `/activity`,
+			},
 		];
 
 		const externalItems = computed(() => {
@@ -79,12 +84,7 @@ export default defineComponent({
 				{
 					icon: 'bug_report',
 					name: t('report_bug'),
-					href: 'https://github.com/LaWebcapsule/d9/issues/new?template=bug_report.yml',
-				},
-				{
-					icon: 'new_releases',
-					name: t('request_feature'),
-					href: 'https://github.com/LaWebcapsule/d9/discussions/new?category=feature-requests',
+					href: 'https://github.com/Datos-Online/d9/issues/new?template=bug_report.yml',
 				},
 			];
 		});
