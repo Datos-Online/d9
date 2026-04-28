@@ -8,6 +8,8 @@
 
 <br />
 
+[English](./readme.md) - [Español](./readme-es.md)
+
 # d9 — Open Data Platform
 
 **d9** is an open-source fork of [Directus 9](https://github.com/directus/directus) (GPLv3), maintained independently by [La Webcapsule](https://github.com/LaWebcapsule). As Directus 10+ is now a premium open-source software, this repository aims to maintain a standard openSource version of Directus 9.
