@@ -1,5 +1,22 @@
 # directus9
 
+## 12.0.9
+
+### Patch Changes
+
+- Updated dependencies [c44b95d]
+- Updated dependencies [afab06b]
+  - @wbce-d9/api@12.5.1
+
+## 12.0.8
+
+### Patch Changes
+
+- Updated dependencies [cc14faf]
+- Updated dependencies [41d2185]
+- Updated dependencies [41d2185]
+  - @wbce-d9/api@12.5.0
+
 ## 12.0.7
 
 ### Patch Changes

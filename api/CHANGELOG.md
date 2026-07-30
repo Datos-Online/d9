@@ -1,5 +1,26 @@
 # @wbce-d9/api
 
+## 12.5.1
+
+### Patch Changes
+
+- c44b95d: qualify the `collection` scope column in many-to-any (a2o/o2a) filter and sort JOINs
+- afab06b: security: fix Dependabot alerts (nodemailer 9.0.3, ws 6.2.5/8.21.1, uuid ≥11.1.1)
+
+## 12.5.0
+
+### Minor Changes
+
+- 41d2185: configure (revisions|activity).item to work as a m2a (alias) field
+- 41d2185: Add date_created and date_updated on directus_users table
+
+### Patch Changes
+
+- cc14faf: when inviting an user that doesn't exist, reload user data from db after creation
+- Updated dependencies [41d2185]
+- Updated dependencies [41d2185]
+  - @wbce-d9/app@10.1.0
+
 ## 12.4.5
 
 ### Patch Changes
