@@ -204,6 +204,7 @@ prefixing the value with `{type}:`. The following types are available:
 | `QS_PARAMETER_LIMIT`       | Maximum number of query string parameters allowed.                                                            | `1000`                       |
 | `ROOT_REDIRECT`            | Where to redirect to when navigating to `/`. Accepts a relative path, absolute URL, or `false` to disable.    | `./admin`                    |
 | `SERVE_APP`                | Whether or not to serve the Admin App under `/admin`.                                                         | `true`                       |
+| `SERVE_GRAPHQL`            | Whether or not to serve the GraphQL API under `/graphql`. Also disables `/server/specs/graphql`.              | `true`                       |
 | `GRAPHQL_INTROSPECTION`    | Whether or not to enable GraphQL Introspection                                                                | `true`                       |
 | `MAX_BATCH_MUTATION`       | The maximum number of items for batch mutations when creating, updating and deleting.                         | `Infinity`                   |
 | `MAX_RELATIONAL_DEPTH`     | The maximum depth when filtering / querying relational fields, with a minimum value of `2`.                   | `10`                         |
@@ -823,7 +824,7 @@ configured in AD, or fallback to the `DEFAULT_ROLE_ID`.
 AUTH_PROVIDERS="ldap"
 
 AUTH_LDAP_DRIVER="ldap"
-AUTH_LDAP_CLIENT_URL="{{LDAP_URL}}"
+AUTH_LDAP_CLIENT_URL="ldap://ldap.example.com"
 AUTH_LDAP_BIND_DN="CN=Bind User,OU=Users,DC=ldap,DC=directus,DC=io"
 AUTH_LDAP_BIND_PASSWORD="p455w0rd"
 AUTH_LDAP_USER_DN="OU=Users,DC=ldap,DC=directus,DC=io"
